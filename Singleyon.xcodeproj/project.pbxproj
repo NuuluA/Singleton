@@ -64,19 +64,43 @@
 		1B5CD34A265FB45500ACC535 /* Singleyon */ = {
 			isa = PBXGroup;
 			children = (
-				1B5CD34B265FB45500ACC535 /* AppDelegate.swift */,
-				1B5CD34D265FB45500ACC535 /* SceneDelegate.swift */,
-				1B5CD34F265FB45500ACC535 /* ViewController.swift */,
-				1B5CD362265FB46700ACC535 /* AccountViewController.swift */,
-				1B5CD364265FB47500ACC535 /* DetailViewController.swift */,
+				1B70D11B265FC3BF0066F539 /* AccountSingleton */,
+				1B70D11D265FC3E40066F539 /* App */,
+				1B70D11C265FC3DA0066F539 /* Controllers */,
 				1B5CD351265FB45500ACC535 /* Main.storyboard */,
-				1B5CD366265FB4F900ACC535 /* AccountService.swift */,
 				1B5CD357265FB45500ACC535 /* Assets.xcassets */,
 				1B5CD359265FB45500ACC535 /* LaunchScreen.storyboard */,
 				1B5CD35C265FB45500ACC535 /* Info.plist */,
 				1B5CD354265FB45500ACC535 /* Singleyon.xcdatamodeld */,
 			);
 			path = Singleyon;
+			sourceTree = "<group>";
+		};
+		1B70D11B265FC3BF0066F539 /* AccountSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				1B5CD366265FB4F900ACC535 /* AccountService.swift */,
+			);
+			path = AccountSingleton;
+			sourceTree = "<group>";
+		};
+		1B70D11C265FC3DA0066F539 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B5CD34F265FB45500ACC535 /* ViewController.swift */,
+				1B5CD362265FB46700ACC535 /* AccountViewController.swift */,
+				1B5CD364265FB47500ACC535 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B70D11D265FC3E40066F539 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1B5CD34B265FB45500ACC535 /* AppDelegate.swift */,
+				1B5CD34D265FB45500ACC535 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
