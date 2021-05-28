@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4A336C2661103E000A8F45 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A336B2661103E000A8F45 /* Albums.swift */; };
+		1B4A336E26611047000A8F45 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A336D26611047000A8F45 /* Users.swift */; };
+		1B4A33702661104D000A8F45 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A336F2661104D000A8F45 /* Posts.swift */; };
+		1B4A33742661107B000A8F45 /* ApiSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A33732661107B000A8F45 /* ApiSingleton.swift */; };
 		1B5CD34C265FB45500ACC535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5CD34B265FB45500ACC535 /* AppDelegate.swift */; };
 		1B5CD34E265FB45500ACC535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5CD34D265FB45500ACC535 /* SceneDelegate.swift */; };
 		1B5CD350265FB45500ACC535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5CD34F265FB45500ACC535 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B4A336B2661103E000A8F45 /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		1B4A336D26611047000A8F45 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		1B4A336F2661104D000A8F45 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		1B4A33732661107B000A8F45 /* ApiSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSingleton.swift; sourceTree = "<group>"; };
 		1B5CD348265FB45500ACC535 /* Singleyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Singleyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5CD34B265FB45500ACC535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B5CD34D265FB45500ACC535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4A336A26610FD8000A8F45 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A337226611067000A8F45 /* Models */,
+				1B4A337126611051000A8F45 /* Service */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		1B4A337126611051000A8F45 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A33732661107B000A8F45 /* ApiSingleton.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B4A337226611067000A8F45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A336B2661103E000A8F45 /* Albums.swift */,
+				1B4A336D26611047000A8F45 /* Users.swift */,
+				1B4A336F2661104D000A8F45 /* Posts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1B5CD33F265FB45500ACC535 = {
 			isa = PBXGroup;
 			children = (
@@ -64,19 +99,44 @@
 		1B5CD34A265FB45500ACC535 /* Singleyon */ = {
 			isa = PBXGroup;
 			children = (
-				1B5CD34B265FB45500ACC535 /* AppDelegate.swift */,
-				1B5CD34D265FB45500ACC535 /* SceneDelegate.swift */,
-				1B5CD34F265FB45500ACC535 /* ViewController.swift */,
-				1B5CD362265FB46700ACC535 /* AccountViewController.swift */,
-				1B5CD364265FB47500ACC535 /* DetailViewController.swift */,
+				1B4A336A26610FD8000A8F45 /* ApiManager */,
+				1B70D11B265FC3BF0066F539 /* AccountSingleton */,
+				1B70D11D265FC3E40066F539 /* App */,
+				1B70D11C265FC3DA0066F539 /* Controllers */,
 				1B5CD351265FB45500ACC535 /* Main.storyboard */,
-				1B5CD366265FB4F900ACC535 /* AccountService.swift */,
 				1B5CD357265FB45500ACC535 /* Assets.xcassets */,
 				1B5CD359265FB45500ACC535 /* LaunchScreen.storyboard */,
 				1B5CD35C265FB45500ACC535 /* Info.plist */,
 				1B5CD354265FB45500ACC535 /* Singleyon.xcdatamodeld */,
 			);
 			path = Singleyon;
+			sourceTree = "<group>";
+		};
+		1B70D11B265FC3BF0066F539 /* AccountSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				1B5CD366265FB4F900ACC535 /* AccountService.swift */,
+			);
+			path = AccountSingleton;
+			sourceTree = "<group>";
+		};
+		1B70D11C265FC3DA0066F539 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B5CD34F265FB45500ACC535 /* ViewController.swift */,
+				1B5CD362265FB46700ACC535 /* AccountViewController.swift */,
+				1B5CD364265FB47500ACC535 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B70D11D265FC3E40066F539 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1B5CD34B265FB45500ACC535 /* AppDelegate.swift */,
+				1B5CD34D265FB45500ACC535 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,11 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B5CD350265FB45500ACC535 /* ViewController.swift in Sources */,
+				1B4A336E26611047000A8F45 /* Users.swift in Sources */,
 				1B5CD363265FB46700ACC535 /* AccountViewController.swift in Sources */,
 				1B5CD34C265FB45500ACC535 /* AppDelegate.swift in Sources */,
+				1B4A336C2661103E000A8F45 /* Albums.swift in Sources */,
 				1B5CD365265FB47500ACC535 /* DetailViewController.swift in Sources */,
 				1B5CD367265FB4F900ACC535 /* AccountService.swift in Sources */,
+				1B4A33702661104D000A8F45 /* Posts.swift in Sources */,
 				1B5CD356265FB45500ACC535 /* Singleyon.xcdatamodeld in Sources */,
+				1B4A33742661107B000A8F45 /* ApiSingleton.swift in Sources */,
 				1B5CD34E265FB45500ACC535 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
